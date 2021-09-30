@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;700&family=Roboto&display=swap");
+.bg-light {
+  background: linear-gradient(90deg, #6cd9ab 0%, #79b4b7 50%, #5087df 100%);
+  width: 100%;
+}
+
+.navbar-collapse {
+  background: transparent;
+}
+
+.btn-secondary {
+  color: #ccc;
+  background-color: #79b4b7;
+  border-color: #0e603d;
+}
+
+.dropdown-menu {
+  background-color: #79b4b7;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #FFF8E4;
+  color: #7D7474;
+}
+
+#header {
+  height: 8rem;
+  top: 0;
+  z-index: 100;
+  position: fixed;
+  display: flex;
+}
+
+#header .navbar {
+  position: fixed;
+}
+
+#header .nav-item {
+  padding-left: 1rem;
+}
+
+#header .navbar-brand {
+  margin-right: 30rem;
+}
+
+#header .navbar-brand img {
+  width: 5rem;
+}
+
+#banner {
+  height: 25rem;
+  background-image: url("../media/img/fondoBanner.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+#destacados {
+  font-family: fontIBM;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0;
+}
+
+#destacados .title {
+  font-size: 1.5rem;
+}
+
+#noticias {
+  font-family: fontIBM;
+  padding: 10px 0;
+  width: 35%;
+}
+
+#noticias .link {
+  display: flex;
+  justify-content: center;
+}
+
+#noticias .noti {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: solid #6C95A3 1px;
+  margin-left: 1rem;
+}
+
+#noticias .title {
+  font-size: 1.5rem;
+}
+
+#noticias .subTitle {
+  font-size: 1rem;
+}
+
+#noticias a {
+  color: #7D7474;
+  text-decoration: none;
+}
+
+#noticias img {
+  width: 16rem;
+  height: 9rem;
+}
+
+#main {
+  grid-area: main;
+}
+
+#main .title {
+  padding: 30px 0 30px;
+}
+
+#propiedades {
+  padding-top: 100px;
+}
+
+#propiedades .dropdown {
+  padding-bottom: 2rem;
+}
+
+#propiedades .title {
+  font-family: fontIBM;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+#propiedades .subTitle {
+  font-size: 1rem;
+}
+
+#propiedades .listaP {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem;
+  border: solid #6cd9ab;
+}
+
+#propiedades a {
+  text-decoration: none;
+  color: #FFF8E4;
+}
+
+#propiedades ol {
+  list-style: none;
+}
+
+#propiedades .table {
+  padding-top: 22rem;
+}
+
+#propiedades td img {
+  width: 300px;
+  height: 200px;
+}
+
+#nosotros {
+  padding-top: 120px;
+}
+
+#nosotros .title {
+  font-family: fontIBM;
+  font-size: 1.5rem;
+}
+
+#nosotros img {
+  width: 500px;
+}
+
+#tasacion {
+  padding-top: 120px;
+}
+
+#tasacion .title {
+  font-size: 1.5rem;
+}
+
+#tasacion form {
+  padding-top: 20px;
+}
+
+#contacto {
+  padding-top: 120px;
+}
+
+#contacto .title {
+  font-size: 1.5rem;
+}
+
+#contacto img {
+  width: 150px;
+  position: fixed;
+  bottom: 120px;
+  right: 120px;
+}
+
+#footer {
+  font-family: fontIBM;
+  grid-area: footer;
+  display: flex;
+  flex-flow: row;
+  padding: 40px;
+  margin-top: 20px;
+  font-size: 1rem;
+  border-top: 1px solid #7D7474;
+  background-color: #FFEBD6;
+}
+
+#footer li {
+  list-style: none;
+}
+
+#footer .socialNetwork {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 20px 0 20px 0;
+}
+
+#footer .socialNetwork img {
+  width: 4rem;
+  padding-left: 1rem;
+}
+
+#footer iframe {
+  display: flex;
+  align-content: center;
+  width: 30rem;
+  margin-left: 10rem;
+}
+/*# sourceMappingURL=estilos.css.map */

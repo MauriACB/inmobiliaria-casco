@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contacto</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../css/estilos.css">
+</head>
+<body>
+	<div id="cuerpo">
+		<!-- Header -->
+		<div id="header">
+			<div>
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					<div class="container">
+						<a class="navbar-brand" href="../index.html"><img src="../media/img/logo/miLogo.jpg" alt="inmobiliariaX" class="rounded"></a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNavDropdown">
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link" href="../index.html">Inicio</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Propiedades</a>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+										<a class="dropdown-item" href="../pages/propiedades.html">Todas las propiedades</a>
+										<a class="dropdown-item" href="../pages/casa.html">Casas</a>
+										<a class="dropdown-item" href="../pages/departamento.html">Departamentos</a>
+										<a class="dropdown-item" href="../pages/local.html">Locales</a>
+										<a class="dropdown-item" href="../pages/oficina.html">Oficinas</a>
+									</div>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="../pages/tasacion.html">Tasación</a>
+								</li>
+								<li class="nav-item nav-item active">
+									<a class="nav-link" href="../pages/contacto.html">Contacto<span class="sr-only">(current)</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<!-- Cuerpo -->
+		<div id="main">
+			<div id=contacto class="container">
+				<div>
+					<p class="title textCenter typeIBM typeBold">Contactate con nosotros:</p>
+				</div>
+				<!-- Formulario con inputs, menu desplegable, checkbox y botones -->
+				<form method="GET" action="" class="typeIBM">
+					<div class="typeIBM typeBold">Dejanos tus datos y nos contactaremos a la brevedad:</div>
+					<div>
+						<input type="text" name="inp_nombre" value="" placeholder="Nombre (Obligatorio)">
+					</div>
+					<div>
+						<input type="text" name="inp_email" value="" placeholder="Correo electrónico (Obligatorio)" id="correoElectronico">
+					</div>
+					<div>
+						<textarea name="inp_mensaje" placeholder="Mensaje"></textarea>
+					</div>
+					<div>
+						<label for="newsletter">Desea recibir el Newsletter?</label>
+						<input type="checkbox" name="categorias" value="newsletter" checked="">
+					</div>
+					<input type="submit" value="Enviar">
+					<input type="reset" value="Limpiar formulario">
+				</form>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d501.9013749953697!2d-58.39388824251299!3d-34.58160158119363!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb06d18d5225%3A0x3652591aa77e712f!2sFloralis%20Gen%C3%A9rica!5e0!3m2!1ses-419!2sar!4v1629674807287!5m2!1ses-419!2sar" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				<a href="https://wa.me/numejemplo" target="_blank"><img src="../media/img/wpp/wpp.jpg" alt="logoWhatsapp" id="burbujaWhatsapp"></a>
+			</div>
+		</div>
+		<!-- Footer -->
+		<div id="footer" class="container typeIBM">
+			<div>
+				<div>
+					<p>Direccion: Av. 'Ejemplo 123' entre calle A y calle B Buenos Aires</p>
+					<p>Telefono: (000) 12345678</p>
+					<p>Correo electronico: ejemplo@hotmail.com.ar</p>
+					<p>Lunes a viernes de 9 a 16hs</p>
+				</div>
+				<div>
+					<ol class="socialNetwork">
+						<li><a href=https://www.facebook.com target="_blank"><img src="../media/img/socialNetwork/facebooklogo.jpg" alt="123"></a></li>
+						<li><a href=https://www.instagram.com target="_blank"><img src="../media/img/socialNetwork/instagramlogo.jpg" alt=""></a></li>
+						<li><a href=https://www.twitter.com target="_blank"><img src="../media/img/socialNetwork/twitterlogo.jpg" alt=""></a></li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+.bg-light{
+	background: $colorMenu;
+	width: 100%;
+}
+.navbar-collapse{
+    background: transparent;
+}
+.btn-secondary{
+    color: #ccc;
+    background-color: #79b4b7;
+    border-color: #0e603d;
+}
+.dropdown-menu{
+    background-color: #79b4b7;
+}
+html{
+    overflow-y: scroll;
+}
+body{
+	font-family: $bodyFont;
+	background-color: $bgColor;
+	color: $bodyColor;
+}
+#header{
+	height: 8rem;
+	top: 0;
+	z-index: 100;
+	position: fixed;
+	display: flex;
+    .navbar{
+        position: fixed;
+    }
+    .nav-item{
+        padding-left: 1rem;
+    }
+    .navbar-brand{
+        margin-right: 30rem;
+
+        img{
+            width: 5rem;
+        }
+    }
+}
+#banner{
+    height: $BannerA/2;
+	background-image: url('../media/img/fondoBanner.jpg');
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+}
+#destacados{
+    font-family: fontIBM;
+    display: flex;
+	flex-direction: column;
+	padding: 40px 0;
+    .title{
+        font-size: 1.5rem;
+    }
+}
+#noticias{
+    font-family: fontIBM;
+    padding: 10px 0;
+    width: 35%;
+    .link{
+        display: flex;
+        justify-content: center;
+    }
+    .noti{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border: solid #6C95A3 1px;
+        margin-left: 1rem;
+    }
+    .title{
+        font-size: 1.5rem;
+    }
+    .subTitle{
+        font-size: 1rem;	
+    }
+    a{
+        color: $bodyColor;
+        text-decoration: none;
+    }
+    img{
+        width: 16rem;
+        height: 9rem;
+    }
+}
+#main{
+	grid-area: main;
+    .title{
+        padding: 30px 0 30px;
+    }
+}
+#propiedades{
+	padding-top: 100px;
+    .dropdown{
+        padding-bottom: 2rem;
+    }
+    .title{
+        font-family: fontIBM;
+        font-size: 1.5rem;
+        font-weight: $fontBold;
+    }
+    .subTitle{
+        font-size: 1rem;
+    }
+    .listaP{
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        gap: 1rem;
+        border: solid rgb(108, 217, 171);
+    }
+    a{
+        text-decoration: none;
+        color: #FFF8E4;
+    }
+    ol{
+        list-style: none;
+    }
+    .table{
+        padding-top: 22rem;
+    }
+    td{
+        img{
+        width: 300px;
+        height: 200px;
+        }
+    }
+
+}
+#nosotros{
+    padding-top: 120px;
+    .title{
+        font-family: fontIBM;
+        font-size: 1.5rem;
+    }
+    img {
+        width: 500px;
+    }
+}
+#tasacion{
+	padding-top: 120px;
+    .title{
+        font-size: 1.5rem;	
+    }
+    form{
+        padding-top: 20px;
+    }
+}
+#contacto{
+	padding-top: 120px;
+    .title{
+        font-size: 1.5rem;	
+    }
+    img{
+        width: 150px;
+        position: fixed;
+        bottom: 120px;
+        right: 120px;
+    }
+}
+#footer{
+    font-family: fontIBM;
+	grid-area: footer;
+	display: flex;
+	flex-flow: row;
+    padding: 40px;
+	margin-top: 20px;
+	font-size: 1rem;
+	border-top: 1px solid $bodyColor;
+	background-color: $footerBg;
+    li{
+        list-style: none;
+    }
+    .socialNetwork{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 20px 0 20px 0;
+        img{
+            width: 4rem;
+            padding-left: 1rem;
+        }
+    }
+    iframe{
+        display: flex;
+        align-content: center;
+        width: 30rem;
+        margin-left: 10rem;
+    }
+}
