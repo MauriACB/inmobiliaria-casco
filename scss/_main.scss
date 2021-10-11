@@ -1,3 +1,9 @@
+.navbar-light .navbar-nav .nav-link{
+    font-family: $fontPOP;
+}
+.navbar-light .navbar-nav .active > .nav-link{
+    font-family: $fontPOP;
+}
 .bg-light{
 	background: $colorMenu;
 	width: 100%;
@@ -13,6 +19,9 @@
 .dropdown-menu{
     background-color: #79b4b7;
 }
+.dropdown-item{
+    font-family: $fontPOP;
+}
 html{
     overflow-y: scroll;
 }
@@ -26,7 +35,6 @@ body{
 	top: 0;
 	z-index: 100;
 	position: fixed;
-	display: flex;
     .navbar{
         position: fixed;
     }
@@ -34,10 +42,11 @@ body{
         padding-left: 1rem;
     }
     .navbar-brand{
-        margin-right: 30rem;
-
+        @media all and (min-width: 768px){
+            margin-right: 25rem;
+        }
         img{
-            width: 5rem;
+            width: 10rem;
         }
     }
 }
@@ -49,18 +58,26 @@ body{
 	width: 100%;
 }
 #destacados{
-    font-family: fontIBM;
+    font-family: $fontPOP;
     display: flex;
 	flex-direction: column;
 	padding: 40px 0;
     .title{
         font-size: 1.5rem;
     }
+    .carousel-caption{
+        -webkit-text-stroke: 1px rgb(0, 0, 0);
+        color: #fff;
+        h5{
+            font-size: 3rem;
+            font-weight: 600;
+        }
+        font-size: 2rem;
+    }
 }
 #noticias{
-    font-family: fontIBM;
-    padding: 10px 0;
-    width: 35%;
+    font-family: $fontPOP;
+    width: 25%;
     .link{
         display: flex;
         justify-content: center;
@@ -73,7 +90,8 @@ body{
         margin-left: 1rem;
     }
     .title{
-        font-size: 1.5rem;
+        font-size: 1rem;
+        font-weight: 600;
     }
     .subTitle{
         font-size: 1rem;	
@@ -83,14 +101,19 @@ body{
         text-decoration: none;
     }
     img{
-        width: 16rem;
-        height: 9rem;
+        width: 10rem;
+        height: 5rem;
+        @media all and (min-width: 768px){
+            width: 16rem;
+            height: 9rem;
+        }
     }
 }
 #main{
 	grid-area: main;
     .title{
         padding: 30px 0 30px;
+        font-family: $fontPOP;
     }
 }
 #propiedades{
@@ -99,7 +122,7 @@ body{
         padding-bottom: 2rem;
     }
     .title{
-        font-family: fontIBM;
+        font-family: $fontPOP;
         font-size: 1.5rem;
         font-weight: $fontBold;
     }
@@ -137,7 +160,7 @@ body{
 #nosotros{
     padding-top: 120px;
     .title{
-        font-family: fontIBM;
+        font-family: $fontPOP;
         font-size: 1.5rem;
     }
     img {
@@ -166,10 +189,14 @@ body{
     }
 }
 #footer{
-    font-family: fontIBM;
+    font-family: $fontPOP;
 	grid-area: footer;
 	display: flex;
-	flex-flow: row;
+	flex-flow: column;
+    @media all and (min-width: 768px){
+        display: flex;
+	    flex-flow: row;
+    }
     padding: 40px;
 	margin-top: 20px;
 	font-size: 1rem;
@@ -191,7 +218,9 @@ body{
     iframe{
         display: flex;
         align-content: center;
-        width: 30rem;
-        margin-left: 10rem;
+        width: 100%;
+        @media all and (min-width: 768px){
+            margin-left: 10rem;
+        }
     }
 }
