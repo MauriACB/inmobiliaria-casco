@@ -51,7 +51,10 @@ body{
     }
 }
 #banner{
-    height: $BannerA/2;
+    @media all and (min-width: 768px){
+        height: $BannerA/2;
+    }
+    height: $BannerA/4;
 	background-image: url('../media/img/fondoBanner.jpg');
 	background-position: center;
 	background-size: cover;
@@ -117,60 +120,76 @@ body{
     }
 }
 #propiedades{
+    font-family: $fontPOP;
 	padding-top: 100px;
-    .dropdown{
-        padding-bottom: 2rem;
+    .card{
+        background-color: #e7d6c3;
+        margin: 0 0 2rem 0;
+    }
+    .card-body{
+        max-height: 6rem;
     }
     .title{
         font-family: $fontPOP;
         font-size: 1.5rem;
         font-weight: $fontBold;
     }
-    .subTitle{
-        font-size: 1rem;
-    }
-    .listaP{
-        font-size: 1rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 1rem;
-        gap: 1rem;
-        border: solid rgb(108, 217, 171);
-    }
     a{
         text-decoration: none;
-        color: #FFF8E4;
+        color: #5e5858;
     }
-    ol{
-        list-style: none;
+    .listaPropiedades{
+        @media all and (min-width: 768px){
+            position: fixed;
+            z-index: 99;
+        }
+        margin-bottom: 1rem;
+        padding: 1rem;
+        background-color: #ebdfd1;
+        border: solid rgb(116, 108, 108) 1px;
+    }
+    ul{
+        list-style: square inside;
     }
     .table{
         padding-top: 22rem;
     }
-    td{
-        img{
+    img{
         width: 300px;
         height: 200px;
-        }
     }
 
 }
 #nosotros{
     padding-top: 120px;
+    font-family: $fontPOP;
+    @media all and (min-width: 768px){
+        .cuerpoNos{
+            display: flex;
+            flex-direction: row;
+        }
+    }
     .title{
         font-family: $fontPOP;
         font-size: 1.5rem;
+        font-weight: $fontBold;
     }
-    img {
-        width: 500px;
+    img{
+        @media all and (min-width: 768px){
+            height: 300px;
+            width: 600px;
+        }
+        height: 160px;
+        width: 320px;
     }
 }
 #tasacion{
 	padding-top: 120px;
+    font-family: $fontPOP;
     .title{
-        font-size: 1.5rem;	
+        font-family: $fontPOP;
+        font-size: 1.5rem;
+        font-weight: $fontBold;	
     }
     form{
         padding-top: 20px;
@@ -211,6 +230,7 @@ body{
         justify-content: flex-start;
         padding: 20px 0 20px 0;
         img{
+            height: 3rem;
             width: 4rem;
             padding-left: 1rem;
         }

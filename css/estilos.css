@@ -66,11 +66,17 @@ body {
 }
 
 #banner {
-  height: 25rem;
+  height: 12.5rem;
   background-image: url("../media/img/fondoBanner.jpg");
   background-position: center;
   background-size: cover;
   width: 100%;
+}
+
+@media all and (min-width: 768px) {
+  #banner {
+    height: 25rem;
+  }
 }
 
 #destacados {
@@ -149,11 +155,17 @@ body {
 }
 
 #propiedades {
+  font-family: "Poppins", sans-serif;
   padding-top: 100px;
 }
 
-#propiedades .dropdown {
-  padding-bottom: 2rem;
+#propiedades .card {
+  background-color: #e7d6c3;
+  margin: 0 0 2rem 0;
+}
+
+#propiedades .card-body {
+  max-height: 6rem;
 }
 
 #propiedades .title {
@@ -162,58 +174,77 @@ body {
   font-weight: 700;
 }
 
-#propiedades .subTitle {
-  font-size: 1rem;
-}
-
-#propiedades .listaP {
-  font-size: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  gap: 1rem;
-  border: solid #6cd9ab;
-}
-
 #propiedades a {
   text-decoration: none;
-  color: #FFF8E4;
+  color: #5e5858;
 }
 
-#propiedades ol {
-  list-style: none;
+#propiedades .listaPropiedades {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #ebdfd1;
+  border: solid #746c6c 1px;
+}
+
+@media all and (min-width: 768px) {
+  #propiedades .listaPropiedades {
+    position: fixed;
+    z-index: 99;
+  }
+}
+
+#propiedades ul {
+  list-style: square inside;
 }
 
 #propiedades .table {
   padding-top: 22rem;
 }
 
-#propiedades td img {
+#propiedades img {
   width: 300px;
   height: 200px;
 }
 
 #nosotros {
   padding-top: 120px;
+  font-family: "Poppins", sans-serif;
+}
+
+@media all and (min-width: 768px) {
+  #nosotros .cuerpoNos {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 #nosotros .title {
   font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
+  font-weight: 700;
 }
 
 #nosotros img {
-  width: 500px;
+  height: 160px;
+  width: 320px;
+}
+
+@media all and (min-width: 768px) {
+  #nosotros img {
+    height: 300px;
+    width: 600px;
+  }
 }
 
 #tasacion {
   padding-top: 120px;
+  font-family: "Poppins", sans-serif;
 }
 
 #tasacion .title {
+  font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
+  font-weight: 700;
 }
 
 #tasacion form {
@@ -266,6 +297,7 @@ body {
 }
 
 #footer .socialNetwork img {
+  height: 3rem;
   width: 4rem;
   padding-left: 1rem;
 }
