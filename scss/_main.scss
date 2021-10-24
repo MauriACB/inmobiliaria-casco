@@ -5,8 +5,9 @@
     font-family: $fontPOP;
 }
 .bg-light{
-	background: $colorMenu;
+	background: $colorMenu !important;
 	width: 100%;
+    border-bottom: 1px solid $bodyColor;
 }
 .navbar-collapse{
     background: transparent;
@@ -24,6 +25,7 @@
 }
 html{
     overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 body{
 	font-family: $bodyFont;
@@ -50,16 +52,6 @@ body{
         }
     }
 }
-#banner{
-    @media all and (min-width: 768px){
-        height: $BannerA/2;
-    }
-    height: $BannerA/4;
-	background-image: url('../media/img/fondoBanner.jpg');
-	background-position: center;
-	background-size: cover;
-	width: 100%;
-}
 #destacados{
     font-family: $fontPOP;
     display: flex;
@@ -70,7 +62,7 @@ body{
     }
     .carousel-caption{
         -webkit-text-stroke: 1px rgb(0, 0, 0);
-        color: #fff;
+        color: rgb(163, 206, 255);
         h5{
             font-size: 3rem;
             font-weight: 600;
@@ -113,10 +105,40 @@ body{
     }
 }
 #main{
-	grid-area: main;
+    background-color: $bgColor;
+    grid-area: main;
     .title{
         padding: 30px 0 30px;
         font-family: $fontPOP;
+    }
+    .separado{
+        margin-top: 100vh;    
+    }   
+}
+#banner{
+    font-family: $fontPOP;
+    z-index: -1;
+    height: $BannerA;
+    background-image: url('../media/img/fondito.jpg');
+    background-position: center;
+    background-size: cover;
+	width: 100%;
+    top: 0;
+    position: fixed;
+    .bannerText{
+        width: 90%;
+        margin: 10rem auto;
+        padding: 0;
+        border-radius: 2rem;
+        background-color: #FFF8E4;
+        color: #7D7474;
+        z-index: 1;
+        list-style: none;
+    }
+    @media all and (min-width: 768px){
+        .bannerText{
+            margin-top: 15rem;
+        }
     }
 }
 #propiedades{
@@ -196,8 +218,10 @@ body{
     }
 }
 #contacto{
+    font-family: $fontPOP;
 	padding-top: 120px;
     .title{
+        font-weight: $fontBold;
         font-size: 1.5rem;	
     }
     img{
