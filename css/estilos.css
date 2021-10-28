@@ -163,7 +163,6 @@ body {
   background-image: url("../media/img/fondito.jpg");
   background-position: center;
   background-size: cover;
-  width: 100%;
   top: 0;
   position: fixed;
 }
@@ -178,6 +177,7 @@ body {
 }
 
 #banner .bannerText {
+  width: 100%;
   border: solid #F2F7FD 1px;
   margin-top: 10rem;
   margin-bottom: 0.2rem;
@@ -193,8 +193,13 @@ body {
   background-color: #08171F;
 }
 
+#banner .container {
+  padding-left: 0;
+}
+
 @media all and (min-width: 768px) {
   #banner {
+    width: 100%;
     padding: 0;
   }
   #banner .container, #banner .container-fluid, #banner .container-lg, #banner .container-md, #banner .container-sm, #banner .container-xl {
