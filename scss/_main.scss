@@ -18,16 +18,16 @@
 }
 .navbar-light .navbar-nav .active > .nav-link{
     font-family: $fontPOP;
-    color: $fontColor;
+    color: $fontBanner;
 }
 .navbar-light .navbar-nav .nav-link{
     color: $navBarFontColor;
 }
 .navbar-light .navbar-nav .nav-link:hover{
-    color: $fontColor;
+    color: $fontBanner;
 }
 .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link{
-    color: $fontColor;
+    color: $fontBanner;
 }
 .navbar-light .navbar-toggler-icon{
     background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 512 512' style='enable-background:new 0 0 512 512;' xml:space='preserve'%3E%3Cg%3E%3Cpath style='fill:%232D527C;' d='M497.537,512H14.463C6.477,512,0,505.523,0,497.537V342.78c0-7.987,6.477-14.463,14.463-14.463 s14.463,6.477,14.463,14.463v140.294h454.147V28.927H342.78c-7.987,0-14.463-6.477-14.463-14.463S334.793,0,342.78,0h154.757 C505.523,0,512,6.477,512,14.463v483.073C512,505.523,505.523,512,497.537,512z'/%3E%3Cpath style='fill:%232D527C;' d='M14.463,270.463C6.477,270.463,0,263.987,0,256V14.463C0,6.477,6.477,0,14.463,0H256 c7.987,0,14.463,6.477,14.463,14.463S263.987,28.927,256,28.927H28.927V256C28.927,263.987,22.45,270.463,14.463,270.463z'/%3E%3Cpath style='fill:%232D527C;' d='M75.209,270.463c-7.987,0-14.463-6.477-14.463-14.463V75.209c0-7.987,6.477-14.463,14.463-14.463 H256c7.987,0,14.463,6.477,14.463,14.463S263.987,89.672,256,89.672H89.672V256C89.672,263.987,83.196,270.463,75.209,270.463z'/%3E%3C/g%3E%3Cpolygon style='fill:%23CEE8FA;' points='378.625,324.125 310.501,256 378.625,187.875 324.125,133.375 256,201.499 187.875,133.375 133.375,187.875 201.499,256 133.375,324.125 187.875,378.625 256,310.501 324.125,378.625 '/%3E%3Cpath style='fill:%232D527C;' d='M324.126,393.089c-3.703,0-7.402-1.413-10.227-4.236L256,330.954l-57.898,57.898 c-5.649,5.646-14.805,5.646-20.455,0l-54.501-54.501c-5.648-5.648-5.648-14.806,0-20.455L181.046,256l-57.898-57.898 c-5.648-5.648-5.648-14.806,0-20.455l54.501-54.501c5.649-5.646,14.805-5.646,20.455,0L256,181.046l57.898-57.898 c5.649-5.646,14.805-5.646,20.455,0l54.501,54.501c5.648,5.648,5.648,14.806,0,20.455L330.954,256l57.898,57.898 c5.648,5.648,5.648,14.806,0,20.455l-54.501,54.501C331.529,391.677,327.828,393.089,324.126,393.089z M256,296.037 c3.703,0,7.402,1.413,10.227,4.236l57.898,57.898l34.045-34.045l-57.898-57.898c-5.648-5.648-5.648-14.806,0-20.455l57.898-57.898 l-34.045-34.045l-57.898,57.898c-5.649,5.646-14.805,5.646-20.455,0l-57.898-57.898l-34.045,34.045l57.898,57.898 c5.648,5.648,5.648,14.806,0,20.455l-57.898,57.898l34.045,34.045l57.898-57.898C248.598,297.449,252.297,296.037,256,296.037z'/%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
@@ -50,6 +50,10 @@
     font-family: $fontPOP;
     color: $navBarFontColor;
 }
+.title{
+    font-weight: $fontBold;
+}
+
 html{
     overflow-y: scroll;
     scroll-behavior: smooth;
@@ -82,79 +86,25 @@ body{
         border-color: none;
     }
 }
-#destacados{
-    font-family: $fontPOP;
-    display: flex;
-	flex-direction: column;
-	padding: 40px 0;
-    .title{
-        font-size: 1.5rem;
-    }
-    .carousel-caption{
-        -webkit-text-stroke: 1px rgb(0, 0, 0);
-        color: $fontBtn;
-        h5{
-            font-size: 3rem;
-            font-weight: 600;
-        }
-        font-size: 2rem;
-    }
-}
-#noticias{
-    font-family: $fontPOP;
-    width: 25%;
-    .link{
-        display: flex;
-        justify-content: center;
-    }
-    .noti{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        border: solid #6C95A3 1px;
-        margin-left: 1rem;
-    }
-    .title{
-        font-size: 1rem;
-        font-weight: 600;
-    }
-    .subTitle{
-        font-size: 1rem;	
-    }
-    a{
-        color: $bodyColor;
-        text-decoration: none;
-    }
-    img{
-        width: 10rem;
-        height: 5rem;
-        @media all and (min-width: 768px){
-            width: 16rem;
-            height: 9rem;
-        }
-    }
-}
-.separado{
+#separado{
     border-top: solid $bodyColor 1px;;
-    margin-top: 100vh; 
+    margin-top: 120vh; 
+    @media all and (min-width: 768px){
+        margin-top: 100vh; 
+    }
 } 
 #main{
+    font-family: $fontPOP;
     background-color: $bgColor;
-    padding-bottom: 3rem;
-    .title{
-        padding: 30px 0 30px;
-        font-family: $fontPOP;
-    }       
 }
 #collage{  
-    padding-top: 1rem;
-    text-shadow: 2px 2px 2px #000000;
+    padding-top: 4rem;
     .media1{
         margin: 0;  
         padding: 0;   
         @media all and (min-width: 768px){
             display: flex;
-            margin: 2rem 0 2rem 0;
+            margin: 4rem 0 2rem 0;
         }
         .casaC{   
             @media all and (min-width: 768px){
@@ -261,8 +211,8 @@ body{
         transform: scale(1.05);
         filter: brightness(115%);
     }    
-    .h3{
-        font-weight: 900;
+    h3{
+        font-weight: 600;
     }
     @media all and (min-width: 768px){
         padding-top: 5rem;
@@ -274,7 +224,7 @@ body{
 #banner{
     font-family: $fontPOP;
     z-index: -1;
-    height: $BannerA;
+    height: $Banner;
     background-image: url('../media/img/fondoM.jpg');
     background-position: 35% 50%;
     background-size: cover;
@@ -290,10 +240,10 @@ body{
     .bannerBtn{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     .anim{
-        animation: fontFadeIn 5s;
+        animation: fontFadeIn 4s;
         animation-delay: -2s;
         animation-timing-function: ease-in-out;
     }
@@ -302,7 +252,7 @@ body{
         margin-bottom: 0.2rem;
         border-radius: 0.5rem;
         color: $fontBanner;
-        text-shadow: 3px 1px 2px #1d3246;
+        text-shadow: 3px 1px 2px #3d3e3f;
         z-index: 1;
         list-style: none;
     }
@@ -339,6 +289,23 @@ body{
             margin: 0 3rem 0 0;
         }
     }
+}
+#destacadas{
+    font-family: $fontPOP;
+    padding: 3rem 1rem 3rem 1rem;
+    @media all and (min-width: 768px){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    h2{
+        padding-bottom: 2rem;
+    }
+    .desBox{
+        .carousel-caption{
+            text-shadow: 1px 2px #000000;
+        }       
+    }     
 }
 #propiedades{
     font-family: $fontPOP;
@@ -381,27 +348,32 @@ body{
     }
 
 }
-#nosotros{
-    padding-top: 120px;
-    font-family: $fontPOP;
+.separado{
+    border-top: solid $bodyColor 1px;;
+    margin-top: 50vh; 
     @media all and (min-width: 768px){
-        .cuerpoNos{
-            display: flex;
-            flex-direction: row;
-        }
+        margin-top: 56vh; 
     }
-    .title{
-        font-family: $fontPOP;
-        font-size: 1.5rem;
+}
+#imagenOficina{
+    z-index: -1;
+    background-image: url('../media/img/nosotros/officeM.jpg');
+    height: $Banner;
+    background-size: cover;
+    background-position: 30%;
+    top: -8rem;
+    position: fixed;
+    width: 100%;
+    @media all and (min-width: 768px){
+        background-image: url('../media/img/nosotros/office.jpg');
+        background-position: center;
+    }
+}
+#nosotros{        
+    padding: 2rem 0 2rem 0;
+    font-family: $fontPOP;
+    span{
         font-weight: $fontBold;
-    }
-    img{
-        @media all and (min-width: 768px){
-            height: 300px;
-            width: 600px;
-        }
-        height: 160px;
-        width: 320px;
     }
 }
 #tasacion{
@@ -418,16 +390,42 @@ body{
 }
 #contacto{
     font-family: $fontPOP;
-	padding-top: 120px;
+    .fotoContacto{
+        margin-top: 5rem;
+        color: $fontDestacados;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url('../media/img/contacto/contactoM.jpg');
+        height: 25rem;
+        background-size: cover;
+        background-position: 10% 75%;
+        width: 100%;
+        margin-bottom: 2rem;
+        @media all and (min-width: 768px){
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-image: url('../media/img/contacto/contacto.jpg');
+        }
+    } 
+    h2{
+        @media all and (min-width: 768px){
+            margin-right: 0.5rem;
+        }
+    }
+    input{
+        margin: 1rem 0 1rem 0;
+    }
+    iframe{
+        margin-bottom: 2rem;
+    }
+    .textA{
+        height: 8rem;
+    }
     .title{
         font-weight: $fontBold;
-        font-size: 1.5rem;	
-    }
-    img{
-        width: 150px;
-        position: fixed;
-        bottom: 120px;
-        right: 120px;
     }
 }
 #footer{
@@ -435,15 +433,18 @@ body{
     font-family: $fontPOP;
 	display: flex;
 	flex-flow: column;
-    @media all and (min-width: 768px){
-        padding: 40px 400px 20px 400px;
-        display: flex;
-	    flex-flow: row;
-    }
-	margin-top: 0;
+    margin-top: 0;
 	font-size: 1rem;
 	border-top: 1px solid $bodyColor;
 	background-color: $colorMenu;
+    color: $fontFooter;
+    h5{
+        filter: brightness(60%);
+        font-style: italic;
+    }
+    h4{
+        font-size: larger;
+    }
     li{
         list-style: none;
     }
@@ -459,11 +460,17 @@ body{
         }
     }
     iframe{
-        display: flex;
-        align-content: center;
         width: 100%;
         @media all and (min-width: 768px){
             margin-left: 10rem;
+        }
+    }
+    @media all and (min-width: 768px){
+        padding: 40px 390px 20px 390px;
+        display: flex;
+	    flex-flow: row;
+        h4{
+            font-size: x-large;
         }
     }
 }
