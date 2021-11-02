@@ -29,10 +29,8 @@
 								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Propiedades</a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"><span class="sr-only">(current)</span>
 									<a class="dropdown-item" href="../pages/propiedades.html">Todas las propiedades</a>
-									<a class="dropdown-item" href="../pages/casa.html">Casas</a>
-									<a class="dropdown-item" href="../pages/departamento.html">Departamentos</a>
-									<a class="dropdown-item" href="../pages/local.html">Locales</a>
-									<a class="dropdown-item" href="../pages/oficina.html">Oficinas</a>
+									<a class="dropdown-item" href="../pages/alquiler.html">Inmuebles en alquiler</a>
+									<a class="dropdown-item" href="../pages/venta.html">Inmuebles en venta</a>
 								</div>
 							</li>
 							<li class="nav-item">
@@ -53,28 +51,23 @@
 	<!-- Main -->
 	<div id="main">
 		<div id="propiedades">
-			<div>
-				<p class="title container text-center">Todas las propiedades</p>
-			</div>
+			<div class="fotoPropiedades"><h2 class="title">Propiedades</h2></div>
 			<div class="container">
-				<div class="row">
-					<div class="col-12 col-sm-6 col-md-4 col-lg-4">
+				<div>
+					<div class="categoriaCard">
 						<!-- Categorias de propiedades -->
 						<div class="listaPropiedades">
 							<ul>
-								<li><a href="casa.html">Casas</a></li>
-								<li><a href="departamento.html">Departamentos</a></li></a></li>
-								<li><a href="local.html">Locales</a></li>
-								<li><a href="oficina.html">Oficinas</a></li>
-								<li><a href="propiedades.html">Todas las propiedades</a></li>										
+								<li><h3><a href="../pages/venta.html">Venta</a></h3></li>	
+								<li><h3><a href="../pages/alquiler.html">Alquiler</a></h3></li>									
 							</ul>
-						</div>
+						</div>						
 					</div>
-					<!-- Casas -->
-					<div class="col-12 col-sm-6 col-md-4 col-lg-4 text-center">
-						<div class="card" style="width: 18rem;">
+					<div class="cardsPropiedades">
+						<!-- Casas -->
+						<div class="card">
 							<a href="">
-								<img src="../media/img/casas/home1.jpg" class="card-img-top" alt="Casa 1" style="max-width: 100%;">
+								<img src="../media/img/p/venta/casas/casa1.jpg" class="card-img-top" alt="Casa 1" style="max-width: 100%;">
 								<div class="card-body">
 									<li>Consulte precio</li>
 									<li>152 m²</li>
@@ -82,32 +75,40 @@
 								</div>
 							</a>
 						</div>
-						<div class="card" style="width: 18rem;">
+						<div class="card">
 							<a href="">
-								<img src="../media/img/casas/home2.jpg" class="card-img-top" alt="Casa 2" style="max-width: 100%;">
-								<div class="card-body">
-									<li>$78.000</li>
-									<li>50 m²</li>
-									<li>Dormitorios 2</li>
-								</div>
-							</a>
-						</div>
-						<div class="card" style="width: 18rem;">
-							<a href="">
-								<img src="../media/img/casas/home3.jpg" class="card-img-top" alt="Casa 3" style="max-width: 100%;">
+								<img src="../media/img/p/venta/casas/casa2.jpg" class="card-img-top" alt="Casa 1" style="max-width: 100%;">
 								<div class="card-body">
 									<li>Consulte precio</li>
-									<li>44 m²</li>
-									<li>Dormitorios 2</li>
+									<li>152 m²</li>
+									<li>Dormitorios 4</li>
 								</div>
 							</a>
 						</div>
-					</div>
-					<!-- Deptos -->
-					<div class="col-12 col-sm-6 col-md-4 col-lg-4 text-center">
-						<div class="card" style="width: 18rem;">
+						<div class="card">
 							<a href="">
-								<img src="../media/img/deptos/depto1.jpg" class="card-img-top" alt="depto 1" style="max-width: 100%;">
+								<img src="../media/img/p/alquiler/casas/casa1.jpg" class="card-img-top" alt="Casa 1" style="max-width: 100%;">
+								<div class="card-body">
+									<li>Consulte precio</li>
+									<li>152 m²</li>
+									<li>Dormitorios 4</li>
+								</div>
+							</a>
+						</div>
+						<div class="card">
+							<a href="">
+								<img src="../media/img/p/alquiler/casas/casa2.jpg" class="card-img-top" alt="Casa 1" style="max-width: 100%;">
+								<div class="card-body">
+									<li>Consulte precio</li>
+									<li>152 m²</li>
+									<li>Dormitorios 4</li>
+								</div>
+							</a>
+						</div>
+						<!-- Deptos -->
+						<div class="card">
+							<a href="">
+								<img src="../media/img/p/venta/deptos/depto1.jpg" class="card-img-top" alt="depto 1" style="max-width: 100%;">
 								<div class="card-body">
 									<li>$40.000</li>
 									<li>60 m²</li>
@@ -115,33 +116,40 @@
 								</div>
 							</a>
 						</div>
-						<div class="card" style="width: 18rem;">
+						<div class="card">
 							<a href="">
-								<img src="../media/img/deptos/depto2.jpg" class="card-img-top" alt="depto 2" style="max-width: 100%;">
+								<img src="../media/img/p/venta/deptos/depto2.jpg" class="card-img-top" alt="depto 1" style="max-width: 100%;">
 								<div class="card-body">
-									<li>$32.000</li>
-									<li>39 m²</li>
-									<li>Dormitorios 1</li>
+									<li>$40.000</li>
+									<li>60 m²</li>
+									<li>Dormitorios 2</li>
 								</div>
 							</a>
 						</div>
-						<div class="card" style="width: 18rem;">
+						<div class="card">
 							<a href="">
-								<img src="../media/img/deptos/depto3.jpg" class="card-img-top" alt="depto 3" style="max-width: 100%;">
+								<img src="../media/img/p/alquiler/deptos/depto1.jpg" class="card-img-top" alt="depto 1" style="max-width: 100%;">
 								<div class="card-body">
-									<li>$27.000</li>
-									<li>20 m²</li>
-									<li>Dormitorios 1</li>
+									<li>$40.000</li>
+									<li>60 m²</li>
+									<li>Dormitorios 2</li>
 								</div>
 							</a>
 						</div>
-					</div>
-					<div class="col-12 col-sm-6 col-md-4 col-lg-4"></div>
-					<!-- Locales -->
-					<div class="col-12 col-sm-12 col-md-8 col-lg-4 text-center">
-						<div class="card" style="width: 18rem;">
+						<div class="card">
 							<a href="">
-								<img src="../media/img/locales/local1.jpg" class="card-img-top" alt="local 1" style="max-width: 100%;">
+								<img src="../media/img/p/alquiler/deptos/depto2.jpg" class="card-img-top" alt="depto 1" style="max-width: 100%;">
+								<div class="card-body">
+									<li>$40.000</li>
+									<li>60 m²</li>
+									<li>Dormitorios 2</li>
+								</div>
+							</a>
+						</div>
+						<!-- Locales -->
+						<div class="card">
+							<a href="">
+								<img src="../media/img/p/venta/locales/local1.jpg" class="card-img-top" alt="local 1" style="max-width: 100%;">
 								<div class="card-body">
 									<li>Consulte precio</li>
 									<li>140 m²</li>
@@ -149,32 +157,40 @@
 								</div>
 							</a>
 						</div>
-						<div class="card" style="width: 18rem;">
+						<div class="card">
 							<a href="">
-								<img src="../media/img/locales/local2.jpg" class="card-img-top" alt="local 2" style="max-width: 100%;">
+								<img src="../media/img/p/venta/locales/local2.jpg" class="card-img-top" alt="local 1" style="max-width: 100%;">
 								<div class="card-body">
-									<li>$20.000</li>
-									<li>38 m²</li>
+									<li>Consulte precio</li>
+									<li>140 m²</li>
 									<li>Vía publica</li>
 								</div>
 							</a>
 						</div>
-						<div class="card" style="width: 18rem;">
+						<div class="card">
 							<a href="">
-								<img src="../media/img/locales/local3.jpg" class="card-img-top" alt="local 3" style="max-width: 100%;">
+								<img src="../media/img/p/alquiler/locales/local1.jpg" class="card-img-top" alt="local 1" style="max-width: 100%;">
 								<div class="card-body">
-									<li>$55.000</li>
-									<li>70 m²</li>
+									<li>Consulte precio</li>
+									<li>140 m²</li>
 									<li>Vía publica</li>
 								</div>
 							</a>
 						</div>
-					</div>
-					<!-- Oficinas -->
-					<div class="col-12 col-sm-12 col-md-8 col-lg-4 text-center">
-						<div class="card" style="width: 18rem;">
+						<div class="card">
 							<a href="">
-								<img src="../media/img/oficinas/oficina1.jpg" class="card-img-top" alt="oficina 1" style="max-width: 100%;">
+								<img src="../media/img/p/alquiler/locales/local2.jpg" class="card-img-top" alt="local 1" style="max-width: 100%;">
+								<div class="card-body">
+									<li>Consulte precio</li>
+									<li>140 m²</li>
+									<li>Vía publica</li>
+								</div>
+							</a>
+						</div>
+						<!-- Oficinas -->
+						<div class="card">
+							<a href="">
+								<img src="../media/img/p/venta/oficinas/oficina1.jpg" class="card-img-top" alt="oficina 1" style="max-width: 100%;">
 								<div class="card-body">
 									<li>$55.000</li>
 									<li>112 m²</li>
@@ -182,22 +198,54 @@
 								</div>
 							</a>
 						</div>
-						<div class="card" style="width: 18rem;">
+						<div class="card">
 							<a href="">
-								<img src="../media/img/oficinas/oficina2.jpg" class="card-img-top" alt="oficina 2" style="max-width: 100%;">
+								<img src="../media/img/p/venta/oficinas/oficina2.jpg" class="card-img-top" alt="oficina 1" style="max-width: 100%;">
 								<div class="card-body">
-									<li>Consulte precio</li>
-									<li>74 m²</li>
+									<li>$55.000</li>
+									<li>112 m²</li>
 									<p></p>
 								</div>
 							</a>
 						</div>
-						<div class="card" style="width: 18rem;">
+						<div class="card">
 							<a href="">
-								<img src="../media/img/oficinas/oficina3.jpg" class="card-img-top" alt="oficina 3" style="max-width: 100%;">
+								<img src="../media/img/p/alquiler/oficinas/oficina1.jpg" class="card-img-top" alt="oficina 1" style="max-width: 100%;">
 								<div class="card-body">
-									<li>$40.000</li>
-									<li>93 m²</li>
+									<li>$55.000</li>
+									<li>112 m²</li>
+									<p></p>
+								</div>
+							</a>
+						</div>
+						<div class="card">
+							<a href="">
+								<img src="../media/img/p/alquiler/oficinas/oficina2.jpg" class="card-img-top" alt="oficina 1" style="max-width: 100%;">
+								<div class="card-body">
+									<li>$55.000</li>
+									<li>112 m²</li>
+									<p></p>
+								</div>
+							</a>
+						</div>
+						<!-- Cocheras -->
+						<div class="card">
+							<a href="">
+								<img src="../media/img/p/venta/cochera/cochera1.jpg" class="card-img-top" alt="oficina 1" style="max-width: 100%;">
+								<div class="card-body">
+									<li>$55.000</li>
+									<li>112 m²</li>
+									<p></p>
+								</div>
+							</a>
+						</div>	
+						<!-- Terrenos -->
+						<div class="card">
+							<a href="">
+								<img src="../media/img/p/venta/terreno/terreno1.jpg" class="card-img-top" alt="oficina 1" style="max-width: 100%;">
+								<div class="card-body">
+									<li>$55.000</li>
+									<li>112 m²</li>
 									<p></p>
 								</div>
 							</a>

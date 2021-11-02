@@ -20,26 +20,22 @@
 
 .navbar-light .navbar-nav .active > .nav-link {
   font-family: "Poppins", sans-serif;
-  color: #3d3732;
+  color: #7a7067;
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #927b5e;
+  color: #574b3f;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #3d3732;
+  color: #7a7067;
 }
 
 .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
-  color: #3d3732;
+  color: #7a7067;
 }
 
 .navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 512 512' style='enable-background:new 0 0 512 512;' xml:space='preserve'%3E%3Cg%3E%3Cpath style='fill:%232D527C;' d='M497.537,512H14.463C6.477,512,0,505.523,0,497.537V342.78c0-7.987,6.477-14.463,14.463-14.463 s14.463,6.477,14.463,14.463v140.294h454.147V28.927H342.78c-7.987,0-14.463-6.477-14.463-14.463S334.793,0,342.78,0h154.757 C505.523,0,512,6.477,512,14.463v483.073C512,505.523,505.523,512,497.537,512z'/%3E%3Cpath style='fill:%232D527C;' d='M14.463,270.463C6.477,270.463,0,263.987,0,256V14.463C0,6.477,6.477,0,14.463,0H256 c7.987,0,14.463,6.477,14.463,14.463S263.987,28.927,256,28.927H28.927V256C28.927,263.987,22.45,270.463,14.463,270.463z'/%3E%3Cpath style='fill:%232D527C;' d='M75.209,270.463c-7.987,0-14.463-6.477-14.463-14.463V75.209c0-7.987,6.477-14.463,14.463-14.463 H256c7.987,0,14.463,6.477,14.463,14.463S263.987,89.672,256,89.672H89.672V256C89.672,263.987,83.196,270.463,75.209,270.463z'/%3E%3C/g%3E%3Cpolygon style='fill:%23CEE8FA;' points='378.625,324.125 310.501,256 378.625,187.875 324.125,133.375 256,201.499 187.875,133.375 133.375,187.875 201.499,256 133.375,324.125 187.875,378.625 256,310.501 324.125,378.625 '/%3E%3Cpath style='fill:%232D527C;' d='M324.126,393.089c-3.703,0-7.402-1.413-10.227-4.236L256,330.954l-57.898,57.898 c-5.649,5.646-14.805,5.646-20.455,0l-54.501-54.501c-5.648-5.648-5.648-14.806,0-20.455L181.046,256l-57.898-57.898 c-5.648-5.648-5.648-14.806,0-20.455l54.501-54.501c5.649-5.646,14.805-5.646,20.455,0L256,181.046l57.898-57.898 c5.649-5.646,14.805-5.646,20.455,0l54.501,54.501c5.648,5.648,5.648,14.806,0,20.455L330.954,256l57.898,57.898 c5.648,5.648,5.648,14.806,0,20.455l-54.501,54.501C331.529,391.677,327.828,393.089,324.126,393.089z M256,296.037 c3.703,0,7.402,1.413,10.227,4.236l57.898,57.898l34.045-34.045l-57.898-57.898c-5.648-5.648-5.648-14.806,0-20.455l57.898-57.898 l-34.045-34.045l-57.898,57.898c-5.649,5.646-14.805,5.646-20.455,0l-57.898-57.898l-34.045,34.045l57.898,57.898 c5.648,5.648,5.648,14.806,0,20.455l-57.898,57.898l34.045,34.045l57.898-57.898C248.598,297.449,252.297,296.037,256,296.037z'/%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
-}
-
-.navbar-toggler.collapsed .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' width='30px' height='30px'%3E%3Cpath fill='%23c2e8ff' d='M1.5 13.5H28.5V16.5H1.5z'/%3E%3Cpath fill='%237496c4' d='M28,14v2H2v-2H28 M29,13H1v4h28V13L29,13z'/%3E%3Cpath fill='%23c2e8ff' d='M1.5 5.5H28.5V8.5H1.5z'/%3E%3Cpath fill='%237496c4' d='M28,6v2H2V6H28 M29,5H1v4h28V5L29,5z'/%3E%3Cg%3E%3Cpath fill='%23c2e8ff' d='M1.5 21.5H28.5V24.5H1.5z'/%3E%3Cpath fill='%237496c4' d='M28,22v2H2v-2H28 M29,21H1v4h28V21L29,21z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
@@ -59,7 +55,7 @@
 
 .dropdown-item {
   font-family: "Poppins", sans-serif;
-  color: #927b5e;
+  color: #574b3f;
 }
 
 .title {
@@ -325,7 +321,7 @@ body {
   margin-top: 10rem;
   margin-bottom: 0.2rem;
   border-radius: 0.5rem;
-  color: #3d3732;
+  color: #7a7067;
   text-shadow: 3px 1px 2px #3d3e3f;
   z-index: 1;
   list-style: none;
@@ -380,6 +376,9 @@ body {
     flex-direction: row;
     justify-content: space-between;
   }
+  #destacadas img {
+    height: 50rem;
+  }
 }
 
 #destacadas h2 {
@@ -392,12 +391,22 @@ body {
 
 #propiedades {
   font-family: "Poppins", sans-serif;
-  padding-top: 100px;
 }
 
-#propiedades .card {
-  background-color: #e7d6c3;
-  margin: 0 0 2rem 0;
+#propiedades .fotoPropiedades {
+  margin-top: 5rem;
+  color: #443f3b;
+  text-shadow: 2px 2px 1px #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../media/img/propiedades/propiedades.jpg");
+  height: 25rem;
+  background-size: cover;
+  background-position: 50% 15%;
+  width: 100%;
+  margin-bottom: 2rem;
+  border-bottom: solid #5f584f 1px;
 }
 
 #propiedades .card-body {
@@ -405,74 +414,100 @@ body {
 }
 
 #propiedades .title {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.5rem;
   font-weight: 700;
 }
 
-#propiedades a {
-  text-decoration: none;
+#venta .fotoVenta {
+  margin-top: 5rem;
+  color: #fffcf2;
+  text-shadow: 2px 2px 1px #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../media/img/venta/venta.jpg");
+  height: 25rem;
+  background-size: cover;
+  background-position: 50% 15%;
+  width: 100%;
+  margin-bottom: 2rem;
+  border-bottom: solid #5f584f 1px;
+}
+
+#alquiler .fotoAlquiler {
+  margin-top: 5rem;
+  color: #443f3b;
+  text-shadow: 2px 2px 1px #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../media/img/alquiler/alquiler.jpg");
+  height: 25rem;
+  background-size: cover;
+  background-position: 50% 15%;
+  width: 100%;
+  margin-bottom: 2rem;
+  border-bottom: solid #5f584f 1px;
+}
+
+.categoriaCard {
+  display: flex;
+  justify-content: center;
+}
+
+.categoriaCard a {
+  text-decoration: underline;
   color: #5e5858;
 }
 
-#propiedades .listaPropiedades {
-  margin-bottom: 1rem;
+.categoriaCard ul {
+  list-style: none;
+}
+
+.categoriaCard .listaPropiedades {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin: 1rem;
   padding: 1rem;
   background-color: #ebdfd1;
   border: solid #746c6c 1px;
 }
 
-@media all and (min-width: 768px) {
-  #propiedades .listaPropiedades {
-    position: fixed;
-    z-index: 99;
-  }
+.card {
+  width: 18rem;
+  background-color: #e7d6c3;
+  margin: 0 0 2rem 0;
+  text-align: center;
 }
 
-#propiedades ul {
-  list-style: square inside;
-}
-
-#propiedades .table {
-  padding-top: 22rem;
-}
-
-#propiedades img {
+.card img {
   width: 300px;
   height: 200px;
 }
 
-.separado {
-  border-top: solid #5f584f 1px;
-  margin-top: 70vh;
+.card a {
+  text-decoration: none;
+  color: #5e5858;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.cardsPropiedades {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 @media all and (min-width: 768px) {
-  .separado {
-    margin-top: 52vh;
-  }
-}
-
-#imagenOficina {
-  z-index: -1;
-  background-image: url("../media/img/nosotros/officeM.jpg");
-  height: 100vh;
-  background-size: cover;
-  background-position: 30%;
-  top: -8rem;
-  position: fixed;
-  width: 100%;
-}
-
-@media all and (min-width: 768px) {
-  #imagenOficina {
-    background-image: url("../media/img/nosotros/office.jpg");
-    background-position: center;
+  .cardsPropiedades {
+    justify-content: space-between;
   }
 }
 
 #nosotros {
-  padding: 2rem 0 2rem 0;
   font-family: "Poppins", sans-serif;
 }
 
@@ -480,28 +515,68 @@ body {
   padding: 1rem;
   background-color: rgba(255, 252, 242, 0.89);
   border-radius: 5px;
+  margin-bottom: 2rem;
 }
 
 #nosotros span {
   font-weight: 700;
 }
 
+#nosotros .fotoNosotros {
+  margin-top: 5rem;
+  color: #fffcf2;
+  text-shadow: 2px 2px 1px #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../media/img/nosotros/officeM.jpg");
+  height: 25rem;
+  background-size: cover;
+  background-position: 50% 45%;
+  width: 100%;
+  margin-bottom: 2rem;
+  border-bottom: solid #5f584f 1px;
+}
+
+@media all and (min-width: 768px) {
+  #nosotros .fotoNosotros {
+    background-image: url("../media/img/nosotros/office.jpg");
+  }
+}
+
 #tasacion {
   font-family: "Poppins", sans-serif;
+}
+
+#tasacion .flexB {
+  padding: 1rem;
+  background-color: rgba(255, 252, 242, 0.89);
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+@media all and (min-width: 768px) {
+  #tasacion .flexB {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+  }
 }
 
 #tasacion .fotoTasacion {
   margin-top: 5rem;
   color: #443f3b;
+  text-shadow: 2px 2px 1px #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   background-image: url("../media/img/tasacion/tasacion.jpg");
   height: 25rem;
   background-size: cover;
-  background-position: 10% 75%;
+  background-position: 50% 75%;
   width: 100%;
   margin-bottom: 2rem;
+  border-bottom: solid #5f584f 1px;
 }
 
 @media all and (min-width: 768px) {
@@ -510,8 +585,35 @@ body {
   }
 }
 
-#tasacion .title {
-  font-weight: 700;
+#tasacion .docuN {
+  background-color: #e9e5dd;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+#tasacion .text-center {
+  margin: 0.5rem 0 2rem 0;
+}
+
+#tasacion .textArea {
+  height: 8rem;
+}
+
+#tasacion input {
+  margin: 0 0 1rem 0;
+  display: flex;
+}
+
+#tasacion #radial {
+  display: flex;
+}
+
+#tasacion #radial label {
+  margin: 0 1rem 1rem 0;
+}
+
+#tasacion #radial input {
+  margin: 0 1rem 1rem 0;
 }
 
 #contacto {
@@ -535,7 +637,8 @@ body {
 
 #contacto .fotoContacto {
   margin-top: 5rem;
-  color: #e0e0e0;
+  color: #fffcf2;
+  text-shadow: 2px 2px 1px #000;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -546,6 +649,7 @@ body {
   background-position: 10% 75%;
   width: 100%;
   margin-bottom: 2rem;
+  border-bottom: solid #5f584f 1px;
 }
 
 @media all and (min-width: 768px) {
@@ -580,29 +684,21 @@ body {
 }
 
 #contacto .text-center {
-  margin: 0.5rem 0 3rem 0;
+  margin: 0.5rem 0 2rem 0;
 }
 
 #contacto .col-4 label {
-  padding: 0 0.5rem 0 0.52rem;
+  padding: 0 1rem 0 0;
 }
 
 #contacto .col-4 .NS {
   display: flex;
   flex-direction: row;
-}
-
-#contacto .col-4 .NS input {
-  margin-top: 1.3rem;
-  margin-right: 9rem;
+  align-items: center;
 }
 
 #contacto .textArea {
   height: 8rem;
-}
-
-#contacto .title {
-  font-weight: 700;
 }
 
 #footer {
@@ -614,7 +710,7 @@ body {
   font-size: 1rem;
   border-top: 1px solid #5f584f;
   background-color: #251009;
-  color: #7a726c;
+  color: #9e948d;
 }
 
 #footer h5 {

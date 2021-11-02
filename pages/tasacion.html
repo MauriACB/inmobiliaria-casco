@@ -29,10 +29,8 @@
 								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Propiedades</a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 									<a class="dropdown-item" href="../pages/propiedades.html">Todas las propiedades</a>
-									<a class="dropdown-item" href="../pages/casa.html">Casas</a>
-									<a class="dropdown-item" href="../pages/departamento.html">Departamentos</a>
-									<a class="dropdown-item" href="../pages/local.html">Locales</a>
-									<a class="dropdown-item" href="../pages/oficina.html">Oficinas</a>
+									<a class="dropdown-item" href="../pages/alquiler.html">Inmuebles en alquiler</a>
+									<a class="dropdown-item" href="../pages/venta.html">Inmuebles en venta</a>
 								</div>
 							</li>
 							<li class="nav-item">
@@ -57,38 +55,59 @@
 			<div class="container">
 				<!-- Formulario -->
 				<form method="GET" action="">
-					<h2 class="text-center">Dejanos tus datos y nos contactaremos a la brevedad:</h2>
-
-					<div>
-						<label for="nya">Nombre y apellido<input type="text" name="inp_nombreyapellido" value="" placeholder="" id="nya"></label>
+					<h3 class="title text-center">Dejanos tus datos y nos contactaremos a la brevedad:</h3>
+					<div class="flexB">
+						<div class="col-4">
+							<div>
+								<label for="name">Nombre completo<input type="text" name="inp_nombreyapellido" value="" placeholder="" id="name"></label>
+							</div>
+							<div>
+								<label for="dni">DNI<input type="text" name="inp_dni" value="" placeholder="" id="dni"></label>
+							</div>
+							<div>
+								<label for="phone">Teléfono<input type="text" name="inp_telefono" value="" placeholder="" id="phone"></label>
+							</div>
+							<div>
+								<label for="email">Correo electrónico<input type="text" name="inp_email" value="" placeholder="" id="email"></label>
+							</div>
+							<div>
+								<div>
+									<p>Tipo de operación:</p>
+									<div id="radial">
+										<label for="opcion_1">Alquiler</label>
+										<input type="radio" name="opciones" value="1" id="opcion_1">
+										<label for="opcion_2">Venta</label>
+										<input type="radio" name="opciones" value="2" id="opcion_2">
+									</div>
+								</div>
+								<div>
+									<label for="direccion">Dirección a tasar<input type="text" name="inp_direccion" value="" placeholder="" id="direccion"></label>
+								</div>
+								<div>
+									<label for="localidad">Localidad<input type="text" name="inp_direccion" value="" placeholder="" id="localidad"></label>
+								</div>
+								<div>
+									<label for="aclaraciones">Aclaraciones<input type="text" name="inp_mensaje" placeholder="" id="aclaraciones" class="textArea"></input></label>
+								</div>
+							</div>
+							<input type="submit" value="Enviar">							
+						</div>		
+						<div class="col-12 col-lg-8">
+							<div class="docuN">
+								<h3>DOCUMENTACIÓN NECESARIA</h3>
+								<h4>Para ingresar tu propiedad a nuestra cartera</h4>
+								<h5>-Datos completos del/los titulares.</h5>	
+								<h5>-Fotocopia del DNI del/los titular/es.</h5>
+								<h5>-Fotocopia de escritura o boleto si se trata de una propiedad a estrenar.</h5>
+								<h5>-Fotocopia de la tasa municipal.</h5>
+								<h5>-Fotocopia de expensas (si las hubiere).</h5>
+								<h5>-Fotocopia del plano de la propiedad.</h5>
+								<h5>-Fotocopia del servicio de luz.</h5>
+								<h5>-Fotocopia del servicio de gas.</h5>
+								<h5>-Su firma en la autorización de comercialización.</h5>									
+							</div>
+						</div>
 					</div>
-					<div>
-						<label for="dni">DNI<input type="text" name="inp_dni" value="" placeholder="" id="dni"></label>
-					</div>
-					<div>
-						<input type="text" name="inp_telefono" value="" placeholder="Teléfono">
-					</div>
-					<div>
-						<input type="text" name="inp_email" value="" placeholder="Correo electrónico">
-					</div>
-					<p>Tipo de operación:</p>
-					<div id="radial">
-						<label for="opcion_1">Alquiler</label>
-						<input type="radio" name="opciones" value="1" id="opcion_1">
-						<label for="opcion_2">Venta</label>
-						<input type="radio" name="opciones" value="2" id="opcion_2">
-					</div>
-					<div>
-						<input type="text" name="inp_direccion" value="" placeholder="Dirección a tasar">
-					</div>
-					<div>
-						<input type="text" name="inp_direccion" value="" placeholder="Localidad">					
-					</div>
-					<div>
-						<textarea name="inp_mensaje" placeholder="Aclaraciones"></textarea>
-					</div>
-					<input type="submit" value="Enviar">
-					<input type="reset" value="Limpiar formulario">
 				</form>
 			</div>			
 		</div>
